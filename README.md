@@ -19,4 +19,23 @@ start learning with ROS2 system
 * QoS 생략(quality of service)
 * ROS programming with python3 Twist message 를 이용해서 메세지 보내기.
 * topic 명령어 ros2 topic list (rt), ros2 topic info, ros2 topic echo, ros2 topic bw, ros2 topic hz, ros2 topic delay, ros2 topic pub, ros2 bag record, ros2 bag info, ros2 bag play.
+- - -
+# day3
+- - -
+* robotis 의 Gazebo simulation
+* gazebo 빛 requisite 설치 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
+* service 명령어 ros2 service list, ros2 service type, ros2 service find, ros2 service call, 
+* gazebo simulation 실행.
+* build -> . ~/turtlebot3_ws/install/local_setup.bash
+* action 이란? 목표상태를 정하고 상태머신을 구동하여 실행.Goal Feedback Result.
+* 목표(goal), 피드백, 결과값을 토픽과 서비스 방식을 혼합하여 사용. 
+* action 명령어 ros2 action list -t, ros2 action info, ros2 action send_goal
+* 파라미터 는 각 노드가 가진 변수. 값을 얻고 쓰는게 쉽게 접근 가능.
+* parameter 명령어. ros2 param list, ros2 param describe, ros2 param get, ros2 param set, ros2 param dump, ros2 param delete
+* ros2 launch turtlebot3_navigation2 navigation2.launch.py
+* ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+* ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+* ros2 run turtlebot3_teleop teleop_keyboard
+* 네가지 명령어로 네비게이션 실행.
+
 
