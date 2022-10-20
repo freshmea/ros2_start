@@ -47,3 +47,4 @@ start learning with ROS2 system
 * wsl2 에 리눅스 가 22.04 로 설치가 되어 있어서 humble 을 설치 하기로 함. 
 * https://makingrobot.tistory.com/159 humble 설치는 여기를 참조.
 * https://cafe.naver.com/openrt/25288 ros2 설정은 오로카 페이지 참조. 
+* humble gazebo 설치 https://answers.gazebosim.org/question/28361/how-to-install-gazebo-for-ubuntu-2204-with-ros2-humble/?answer=28427
