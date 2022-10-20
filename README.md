@@ -37,5 +37,10 @@ start learning with ROS2 system
 * ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 * ros2 run turtlebot3_teleop teleop_keyboard
 * 네가지 명령어로 네비게이션 실행.
-
+- - - 
+# day4
+- - -
+* 최종 프로젝트 팀 정하기. 
+* turtle subscriber 만들기. 
+* colcon build --symlink-install --package-select py_pybsub
 
