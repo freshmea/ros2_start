@@ -50,3 +50,9 @@ start learning with ROS2 system
 * freeRTOS 설정해서 라즈베리파이 나노와 DDS 통신하기. 
 * http://wiki.ros.org/rviz
 
+* colcon build --symlink-install --package-select py_pybsub
+* https://keep-steady.tistory.com/45 wsl2 에 ros 설치하기.
+* wsl2 에 리눅스 가 22.04 로 설치가 되어 있어서 humble 을 설치 하기로 함. 
+* https://makingrobot.tistory.com/159 humble 설치는 여기를 참조.
+* https://cafe.naver.com/openrt/25288 ros2 설정은 오로카 페이지 참조. 
+* humble gazebo 설치 https://answers.gazebosim.org/question/28361/how-to-install-gazebo-for-ubuntu-2204-with-ros2-humble/?answer=28427
