@@ -56,3 +56,10 @@ start learning with ROS2 system
 * https://makingrobot.tistory.com/159 humble 설치는 여기를 참조.
 * https://cafe.naver.com/openrt/25288 ros2 설정은 오로카 페이지 참조. 
 * humble gazebo 설치 https://answers.gazebosim.org/question/28361/how-to-install-gazebo-for-ubuntu-2204-with-ros2-humble/?answer=28427
+
+- - -
+# day5
+- - -
+* 인터페이스 만들기.
+* 패키지 설치 ros2 pkg create topic_service_action_rclpy_example --build-type ament_python --dependencies rclpy std_msgs
+* 목적 각도에 맞게 거북이 움직이기.
