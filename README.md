@@ -42,5 +42,11 @@ start learning with ROS2 system
 - - -
 * 최종 프로젝트 팀 정하기. 
 * turtle subscriber 만들기. 
-* colcon build --symlink-install --package-select py_pybsub
+* colcon build --symlink-install --package-select py_pybsub 특정 패키지만 빌드
+* 14장 인터페이스 만들기. - Todo
+* 시간 설정 하기(system time, ros time, steady time)- Todo
+* 토픽 서비스 액션 파일 만들기. - Todo
+* 런치 파일 만들고 (namespace , remapping, 파이썬으로 만들기)- Todo
+* freeRTOS 설정해서 라즈베리파이 나노와 DDS 통신하기. 
+* http://wiki.ros.org/rviz
 
