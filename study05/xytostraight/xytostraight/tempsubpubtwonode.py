@@ -53,8 +53,7 @@ def main(args=None):
         x= input('input x : \n')
         y= input('input y : \n')
         node1.inputGoal(x, y)
-        rclpy.spin_once(node1)
-        rclpy.spin(node2)
+        rclpy.spin()
     except KeyboardInterrupt:
         node.get_logger().info('keyboard Interrupt (SIGNT)')
     finally:
