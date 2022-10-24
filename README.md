@@ -57,3 +57,10 @@ start learning with ROS2 system
 * 패키지 설치 ros2 pkg create topic_service_action_rclpy_example --build-type ament_python --dependencies rclpy std_msgs
 * 목적 각도에 맞게 거북이 움직이기.
 * topic_service_action excute and analyze. 
+- - -
+# day6
+- - -
+* script 폴더 설정.
+* main 함수 쪽으로 몇가지 함수 이동.
+* https://github.com/greattoe/ros2tutorial/blob/main/turtlesim/2_subscribe_turtle_pose.md
+* 
