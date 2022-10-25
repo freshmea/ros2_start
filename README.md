@@ -63,4 +63,25 @@ start learning with ROS2 system
 * script 폴더 설정.
 * main 함수 쪽으로 몇가지 함수 이동.
 * https://github.com/greattoe/ros2tutorial/blob/main/turtlesim/2_subscribe_turtle_pose.md
-* 
+* turtlebot3 기체 구동.
+* 핫스팟 설정 https://github.com/greattoe/ros_tutorial_kr/blob/master/ros1_tutorial/turtlebot3/tb3_1_set_hotspot_on_1804.md
+* sd 카드에 SBC 셋업 
+* https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup
+* 터틀봇3 텔레오피 키보드로 작동 확인
+- - -
+# day7
+- - -
+* 라즈베리 카메라 설치.
+* 라즈베리 카메라 연결 . https://rudalskim.tistory.com/275 -- 실패.
+* 디바이스 세팅 https://jdu-stuff.tistory.com/50
+	* git clone --branch ros2 https://github.com/ros-perception/vision_opencv.git 안됨. branch 를 foxy 로 함.
+* turtlebot3 topic 확인하고 type 이 무잇인지 확인.
+* 새로운 패키지 만듬.
+	* ros2 pkg create tb3 --build-type ament_python --dependencies rclpy geometry_msgs
+	* 
+* 라즈베리 카메라 설치 
+	* https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e 라즈파이 설정 사용하기.
+* ar_track 실행하기
+	* sudo apt install ros-foxy-tf-transformations 실행해서 설치. 
+	* sudo pip3 install transforms3d 설치
+* ar_track 의 mv_tb3, test_mv_tb3, pub_tb3_pose2d, straight_by_pose2d 코드 변경. 
