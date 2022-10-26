@@ -85,3 +85,17 @@ start learning with ROS2 system
 	* sudo apt install ros-foxy-tf-transformations 실행해서 설치. 
 	* sudo pip3 install transforms3d 설치
 * ar_track 의 mv_tb3, test_mv_tb3, pub_tb3_pose2d, straight_by_pose2d 코드 변경. 
+- - -
+# day8
+- - -
+* vnc 설정 https://ghostweb.tistory.com/804
+* 라즈피캠 카메라 작동 확인 완료!!
+	* https://github.com/christianrauch/raspicam2_node 라즈피캠 지시대로 설치.
+	* 카메라 디바이스 설치. (https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e)
+	* boot/firmware/
+	* rivz2 로 영상 확인. 
+* 노트북 usb_cam 확인. 
+* sudo apt install ros-foxy-usb-cam
+* source /opt/ros/foxy/setup.bash
+* ros2 run usb_cam usb_cam_node_exe ---> qrt 에서 확인.
+* ros2 launch usb_cam demo_launch.py
