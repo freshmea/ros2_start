@@ -94,8 +94,27 @@ start learning with ROS2 system
 	* 카메라 디바이스 설치. (https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e)
 	* boot/firmware/
 	* rivz2 로 영상 확인. 
+	* /boot/firmware/config.txt 맨 아래 다음 추가.
+	* start_x =1 
+	* gpu_mem = 128
+	* 실행 명령.
+	* ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
 * 노트북 usb_cam 확인. 
 * sudo apt install ros-foxy-usb-cam
 * source /opt/ros/foxy/setup.bash
 * ros2 run usb_cam usb_cam_node_exe ---> qrt 에서 확인.
 * ros2 launch usb_cam demo_launch.py
+* https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco AR 마커 설치.
+* 터틀봇3 안에서 raspicam_node2/cfg/params.cfg : compressed -> raw 로 바꿈.
+* id --> 등록된 사용자그룹
+* sudo usermod -a -V video ubuntu
+* 터틀봇3 의 카메라가 잘 되지 않아서 https://github.com/clydemcqueen/opencv_cam 이것을 빌드함.
+* https://github.com/ptrmu/ros2_shared 이것도 같이 빌드함 리콰이어됨.
+- - -
+# day9
+- - -
+* raspicam2_node 가 발행하는 image topic 중 camera/image/compressed 의 type 이 두개이다. 
+* ros2 topic echo /ar_pose_marker 분석.
+* ros2 run image_transport republish raw --ros-args --remap in:=/camera/image/compressed --remap out:=/image_raw --> image 를 다시 변경. 
+* ar_track sub_marker_pose 변경. 
+* camera가 발행하는 topic 들과 압축된 topic compressed 그것들 사이의 변경 방법을 정리할 필요가 있다. 
