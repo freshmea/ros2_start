@@ -118,3 +118,4 @@ start learning with ROS2 system
 * ros2 run image_transport republish raw --ros-args --remap in:=/camera/image/compressed --remap out:=/image_raw --> image 를 다시 변경. 
 * ar_track sub_marker_pose 변경. 
 * camera가 발행하는 topic 들과 압축된 topic compressed 그것들 사이의 변경 방법을 정리할 필요가 있다. 
+* ros2 run py_pubsub listener image trasffer 를 만듬.
