@@ -126,3 +126,4 @@ start learning with ROS2 system
 * launch 파일에 camera node 같이 동작하게 만들기.(turtlebot3/src의 launch 폴더의 robot.launch.py 파일을 고침.  )
 * raspicam dev/video0 가 생기지 않는다면 https://www.codetd.com/en/article/12943496
  여기에서 추천해주는 순서대로 실행. 
+* move_tb3.py 수정. 라디안과 디그리 혼선 잡고. 멈추지 않는 현상 해결. 
