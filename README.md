@@ -92,11 +92,13 @@ start learning with ROS2 system
 * 라즈피캠 카메라 작동 확인 완료!!
 	* https://github.com/christianrauch/raspicam2_node 라즈피캠 지시대로 설치.
 	* 카메라 디바이스 설치. (https://chuckmails.medium.com/enable-pi-camera-with-raspberry-pi4-ubuntu-20-10-327208312f6e)
+	* raspicam dev/video0 가 생기지 않는다면 https://www.codetd.com/en/article/12943496 여기에서 추천해주는 순서대로 실행.
 	* boot/firmware/
 	* rivz2 로 영상 확인. 
 	* /boot/firmware/config.txt 맨 아래 다음 추가.
 	* start_x =1 
 	* gpu_mem = 128
+	* sudo usermod -a -V video ubuntu
 	* 실행 명령.
 	* ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
 * 노트북 usb_cam 확인. 
@@ -107,7 +109,6 @@ start learning with ROS2 system
 * https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco AR 마커 설치.
 * 터틀봇3 안에서 raspicam_node2/cfg/params.cfg : compressed -> raw 로 바꿈.
 * id --> 등록된 사용자그룹
-* sudo usermod -a -V video ubuntu
 * 터틀봇3 의 카메라가 잘 되지 않아서 https://github.com/clydemcqueen/opencv_cam 이것을 빌드함.
 * https://github.com/ptrmu/ros2_shared 이것도 같이 빌드함 리콰이어됨.
 - - -
@@ -119,3 +120,9 @@ start learning with ROS2 system
 * ar_track sub_marker_pose 변경. 
 * camera가 발행하는 topic 들과 압축된 topic compressed 그것들 사이의 변경 방법을 정리할 필요가 있다. 
 * ros2 run py_pubsub listener image trasffer 를 만듬.
+- - -
+# day10
+- - -
+* launch 파일에 camera node 같이 동작하게 만들기.(turtlebot3/src의 launch 폴더의 robot.launch.py 파일을 고침.  )
+* raspicam dev/video0 가 생기지 않는다면 https://www.codetd.com/en/article/12943496
+ 여기에서 추천해주는 순서대로 실행. 
