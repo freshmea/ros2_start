@@ -127,3 +127,36 @@ start learning with ROS2 system
 * raspicam dev/video0 가 생기지 않는다면 https://www.codetd.com/en/article/12943496
  여기에서 추천해주는 순서대로 실행. 
 * move_tb3.py 수정. 라디안과 디그리 혼선 잡고. 멈추지 않는 현상 해결. 
+- - -
+# day11
+- - -
+* ar_track_mark2 시연.
+* 마커를 찾고 직각 삼각형 경로로 이동하기. 
+* 아이디어 회의: 공장 관리->
+	* 지도 그리기.
+	* 충전 포트 에서 출발. 다시 충전 포트로 돌아 오기. 정해진 시간마다 반복하기.
+	* 정해진 위치에서 사진 찍기. 관리자에게 메세지(카톡 API 사용) 보내기.
+	* 
+	* 버튼 누르기
+	* 
+* 집안환경-
+	* 충전 포트 로 충전하기.
+	* 웰컴 투 홈. 메세지.
+	* 불켜져 있는지 확인하고 끄기.
+	* 가스 점검.
+	* 침입자 확인.
+	* 사람인식해서 로그 저장.
+	* 리모컨 찾아오기. 
+	* 정해진 시간에 약 가지고 오기. 
+	* 빨래감을 빨래바구니에 넣기. 
+	* 정해진 위치에 물건 놓기.
+	* 
+- - -
+# day12
+- - -
+* action 연습.
+* arithmetic action server client.
+* 레이저 데이터가 나오지 않아서 원인을 찾음. 
+* 첫번째 세팅할 때 레이저세팅이 잘못 됨. git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git LSD-01 또는 02 설정을 확인. 
+* rviz2 내비게이션 에서 send-goal  명령어가 무엇인지 확인. 
+* followwaypoints 를 만듬.
