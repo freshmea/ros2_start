@@ -173,3 +173,9 @@ start learning with ROS2 system
 * 3~ 6개월 사이로 프로젝트 진행. - 프로젝트의 매출 규모나 순수익은?
 * 
 * 스마트HACCP 스마트팩토리와 연관이 큼. 
+
+- - -
+# day-fianl
+- - -
+
+* 
